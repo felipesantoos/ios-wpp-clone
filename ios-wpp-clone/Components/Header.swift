@@ -21,7 +21,7 @@ struct Header: View {
                 tabButtons()
                     .padding(.horizontal, 16.0)
             }
-            .frame(width: view.size.width, height: 96.0)
+            .frame(width: view.size.width, height: 84.0)
             .padding(.vertical, 16.0)
             .background(primaryGreenColor)
         }
@@ -36,11 +36,14 @@ struct Header: View {
     
     func topHeaderGroupButtons() -> some View {
         return HStack {
-            Image(systemName: "globe")
+            Image(systemName: "magnifyingglass")
                 .font(.system(size: 24.0))
                 .foregroundColor(.white)
-            Image(systemName: "house")
+            Spacer()
+                .frame(maxWidth: 24.0)
+            Image(systemName: "ellipsis")
                 .font(.system(size: 24.0))
+                .rotationEffect(.degrees(90.0))
                 .foregroundColor(.white)
         }
     }
@@ -51,39 +54,45 @@ struct Header: View {
                 .font(.system(size: 24.0))
                 .foregroundColor(.white)
             Spacer()
-            tabButton(text: "Conversas", circledNumber: 5)
+            tabButtonWithNumber(text: "Conversas", hasCircledNumber: true, circledNumber: 5, isSelected: true)
             Spacer()
             Text("Status")
-                .font(.custom("Arial", size: 20.0))
+                .font(.custom("Arial", size: 18.0))
                 .foregroundColor(.white)
             Spacer()
-            Text("Chamadas")
-                .font(.custom("Arial", size: 20.0))
-                .foregroundColor(.white)
+            tabButtonWithNumber(text: "Chamadas")
         }
     }
 }
 
-func tabButton(text: String, circledNumber: Int) -> some View {
-    return ZStack {
+func tabButtonWithNumber(text: String, hasCircledNumber: Bool = false, circledNumber: Int = 0, isSelected: Bool = false) -> some View {
+    let tabButton = ZStack {
         HStack {
             Text(text)
-                .font(.custom("Arial", size: 20.0))
+                .font(.custom("Arial", size: 18.0))
                 .foregroundColor(.white)
-                .bold()
-            ZStack {
+            hasCircledNumber ? AnyView(ZStack {
                 Circle()
-                    .frame(width: 24.0)
+                    .frame(width: 20.0)
                     .foregroundColor(.white)
                 Text("\(circledNumber)")
+                    .font(.custom("Arial", size: 14.0))
                     .foregroundColor(primaryGreenColor)
-            }
+            }) : AnyView(EmptyView())
         }
-        Rectangle()
-            .frame(height: 4.0)
-            .foregroundColor(.white)
-            .offset(y: 28.0)
+        hasCircledNumber ? AnyView(
+            Rectangle()
+                .frame(height: 4.0)
+                .foregroundColor(.white)
+                .offset(y: 28.0)
+        ) : AnyView(EmptyView())
     }
+    
+    if isSelected {
+        return AnyView(tabButton.bold())
+    }
+    
+    return AnyView(tabButton)
 }
 
 struct Header_Previews: PreviewProvider {

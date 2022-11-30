@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		551731812937DC750042337D /* AppBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551731802937DC750042337D /* AppBar.swift */; };
+		551731832937DCBC0042337D /* Texts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551731822937DCBC0042337D /* Texts.swift */; };
+		551731862937DFF40042337D /* Conversation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551731852937DFF40042337D /* Conversation.swift */; };
+		551731882937E05F0042337D /* ConversationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551731872937E05F0042337D /* ConversationItem.swift */; };
+		5517318A2937E1EC0042337D /* DefaultConversationImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551731892937E1EC0042337D /* DefaultConversationImage.swift */; };
+		5517318C2937E5280042337D /* Examples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5517318B2937E5280042337D /* Examples.swift */; };
+		552644462937F76600F24BE3 /* Lengths.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552644452937F76600F24BE3 /* Lengths.swift */; };
 		5566871829357E6900391AF7 /* ios_wpp_cloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5566871729357E6900391AF7 /* ios_wpp_cloneApp.swift */; };
 		5566871A29357E6900391AF7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5566871929357E6900391AF7 /* ContentView.swift */; };
 		5566871C29357E6900391AF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5566871B29357E6900391AF7 /* Assets.xcassets */; };
@@ -15,7 +22,6 @@
 		5566873329357E6A00391AF7 /* ios_wpp_cloneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5566873229357E6A00391AF7 /* ios_wpp_cloneUITests.swift */; };
 		5566873529357E6A00391AF7 /* ios_wpp_cloneUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5566873429357E6A00391AF7 /* ios_wpp_cloneUITestsLaunchTests.swift */; };
 		5566874429357EC700391AF7 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5566874329357EC700391AF7 /* HomeScreen.swift */; };
-		5566874629357EE200391AF7 /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5566874529357EE200391AF7 /* Header.swift */; };
 		55668749293580FA00391AF7 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55668748293580FA00391AF7 /* Colors.swift */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +43,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		551731802937DC750042337D /* AppBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBar.swift; sourceTree = "<group>"; };
+		551731822937DCBC0042337D /* Texts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Texts.swift; sourceTree = "<group>"; };
+		551731852937DFF40042337D /* Conversation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Conversation.swift; sourceTree = "<group>"; };
+		551731872937E05F0042337D /* ConversationItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationItem.swift; sourceTree = "<group>"; };
+		551731892937E1EC0042337D /* DefaultConversationImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultConversationImage.swift; sourceTree = "<group>"; };
+		5517318B2937E5280042337D /* Examples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Examples.swift; sourceTree = "<group>"; };
+		552644452937F76600F24BE3 /* Lengths.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lengths.swift; sourceTree = "<group>"; };
 		5566871429357E6900391AF7 /* ios-wpp-clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-wpp-clone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5566871729357E6900391AF7 /* ios_wpp_cloneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_wpp_cloneApp.swift; sourceTree = "<group>"; };
 		5566871929357E6900391AF7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -48,7 +61,6 @@
 		5566873229357E6A00391AF7 /* ios_wpp_cloneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_wpp_cloneUITests.swift; sourceTree = "<group>"; };
 		5566873429357E6A00391AF7 /* ios_wpp_cloneUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_wpp_cloneUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		5566874329357EC700391AF7 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
-		5566874529357EE200391AF7 /* Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
 		55668748293580FA00391AF7 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -77,6 +89,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		551731842937DFE10042337D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				551731852937DFF40042337D /* Conversation.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		5566870B29357E6900391AF7 = {
 			isa = PBXGroup;
 			children = (
@@ -100,6 +120,7 @@
 		5566871629357E6900391AF7 /* ios-wpp-clone */ = {
 			isa = PBXGroup;
 			children = (
+				551731842937DFE10042337D /* Models */,
 				55668747293580ED00391AF7 /* Utils */,
 				5566874229357EA000391AF7 /* Components */,
 				5566874129357E9300391AF7 /* Screens */,
@@ -147,7 +168,9 @@
 		5566874229357EA000391AF7 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				5566874529357EE200391AF7 /* Header.swift */,
+				551731802937DC750042337D /* AppBar.swift */,
+				551731872937E05F0042337D /* ConversationItem.swift */,
+				551731892937E1EC0042337D /* DefaultConversationImage.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -156,6 +179,9 @@
 			isa = PBXGroup;
 			children = (
 				55668748293580FA00391AF7 /* Colors.swift */,
+				551731822937DCBC0042337D /* Texts.swift */,
+				5517318B2937E5280042337D /* Examples.swift */,
+				552644452937F76600F24BE3 /* Lengths.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -290,11 +316,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5566874629357EE200391AF7 /* Header.swift in Sources */,
+				551731882937E05F0042337D /* ConversationItem.swift in Sources */,
+				551731832937DCBC0042337D /* Texts.swift in Sources */,
 				55668749293580FA00391AF7 /* Colors.swift in Sources */,
 				5566871A29357E6900391AF7 /* ContentView.swift in Sources */,
 				5566871829357E6900391AF7 /* ios_wpp_cloneApp.swift in Sources */,
+				552644462937F76600F24BE3 /* Lengths.swift in Sources */,
+				551731862937DFF40042337D /* Conversation.swift in Sources */,
 				5566874429357EC700391AF7 /* HomeScreen.swift in Sources */,
+				5517318A2937E1EC0042337D /* DefaultConversationImage.swift in Sources */,
+				5517318C2937E5280042337D /* Examples.swift in Sources */,
+				551731812937DC750042337D /* AppBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

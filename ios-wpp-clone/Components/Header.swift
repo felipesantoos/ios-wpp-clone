@@ -24,7 +24,9 @@ struct Header: View {
             .frame(width: view.size.width, height: 84.0)
             .padding(.vertical, 16.0)
             .background(primaryGreenColor)
+            .shadow(radius: 4.0)
         }
+        .frame(maxHeight: 116.0)
     }
     
     func logo() -> some View {
